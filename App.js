@@ -20,9 +20,21 @@ export default function App() {
     <>
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Welcome} />
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Signup" component={Signup} />
+        <Stack.Screen name="Home" component={Welcome} options={
+          {
+            headerShown: false
+          }
+        }/>
+        <Stack.Screen name="Login" component={Login} options={
+          {
+            headerShown: false
+          }
+        }/>
+        <Stack.Screen name="Signup" component={Signup} options={
+          {
+            headerShown: false
+          }
+        }/>
       </Stack.Navigator>
     </NavigationContainer>
     </>
